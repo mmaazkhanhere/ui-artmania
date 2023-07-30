@@ -16,7 +16,8 @@ module.exports = {
         accent: "#337bb6",
       },
       backgroundImage:{
-        painpoint:'url("/assets/painpoint.png")'
+        painpoint:'url("/assets/painpoint.png")',
+        findings:'url("/assets/findings.png")'
       }
     },
   },

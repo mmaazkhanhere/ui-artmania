@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -35,7 +36,7 @@ const Home = (props: Props) => {
           Research revealed that the user group faced variety of problem in their art careers including time mismanagement, artisitic block, lack
           of resources, limited access to art community, and no access to art experts.
         </p>
-        <h4 className='uppercase text-[20px] font-kanit font-bold tracking-[4px] mt-[50px]'>Research Goals</h4>
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[50px]'>Research Goals</h4>
 
         <div className='grid grid-cols-2 w-full mt-[50px] gap-8'>
           {/*1st Grid */}
@@ -65,7 +66,7 @@ const Home = (props: Props) => {
 
         </div>
         {/*painpoints */}
-        <h4 className='uppercase text-[20px] font-kanit font-bold tracking-[4px] mt-[100px]'>Pain points indentified</h4>
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>Pain points indentified</h4>
         <div className='grid grid-cols-3 gap-10 mt-[50px]'>
 
           {/*1st Grid */}
@@ -110,35 +111,145 @@ const Home = (props: Props) => {
       </section>
 
       {/*Design Section */}
-      <section className='flex flex-col items-end justify-center'>
+      <section className='flex flex-col items-start justify-center'>
         <h1 className='font-kanit text-[52px] underline decoration-accent uppercase tracking-[8px] mt-[100px] '>
           Design Process
         </h1>
         {/*userflow */}
-        <p className='mt-[100px] font-bold font-kanit text-[22px] text-right'>
+        <p className='mt-[100px] text-[22px]'>
           I created a user flow of how the user will navigate through the app and complete their desired activity. The task was to use
           ArtMania app to have access to resource to advance art career.
         </p>
-        <Image src='/assets/userflow.png' alt="User Flow" width={800} height={800} className='mt-[50px]' />
+        <Image src='/assets/userflow.png' alt="User Flow" width={800} height={800} className='mt-[50px] self-center' />
 
         {/*paper wireframe */}
-        <h4 className='uppercase text-[20px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
           Paper Wireframes
         </h4>
-        <p className='mt-[50px] text-[22px] text-right'>
+        <p className='mt-[50px] text-[22px]'>
           The goal of creating a paper wireframe for the homepage of an art studio app that offers an art eBook collection and expert consultation
           is to establish a clear and user-friendly interface that effectively communicates the apps features and benefits
         </p>
-        <Image src='/assets/paperwireFrame.jpg' alt="Paper wireframe" width={800} height={800} className='mt-[50px]' />
+        <Image src='/assets/paperwireFrame.jpg' alt="Paper wireframe" width={800} height={800} className='mt-[50px] self-center' />
 
         {/*digital wireframe */}
-        <h4 className='uppercase text-[20px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
           Digital Wireframes
         </h4>
-        <p className='mt-[50px] text-[22px] text-right'>
-          After selecting the best possible design to offer better user experience, I created a digital wireframe using Figma.
+        <p className='mt-[50px] text-[22px]'>
+          After selecting the best possible design to offer better user experience, I created a digital wireframe using Figma. The homepage is
+          designed in that minimise user searching time for their task as most of the user have time management issues. The homage is divided into
+          clear section to improve user navigation
         </p>
-        <Image src='/assets/paperwireFrame.jpg' alt="Paper wireframe" width={800} height={800} className='mt-[50px]' />
+        <Image src='/assets/digital-wireframe-1.png' alt="Homepage wireframe" width={800} height={800} className='mt-[50px] self-center' />
+        <p className='mt-[50px] text-[22px]'>
+          In the intial stage of desiging I tried to made sure the content as explicit as possible to make it user friendly and base it on the
+          user research I already conducted
+        </p>
+        <Image src='/assets/digital-wireframe-2.png' alt="Expert page wireframe" width={800} height={800} className='mt-[50px] self-center' />
+
+        {/*low fidelity prototype */}
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+          Digital Wireframes
+        </h4>
+        <p className='mt-[50px] text-[22px]'>
+          I connected all the wireframes to create an interactive prototype which can be used to for usbaility test to identify pain points and
+          iterate over the design based on the user feedback
+          <br />
+          <Link href='https://www.figma.com/proto/f5wP8FlZkCE2HoYvb4zKsU/Untitled?page-id=0%3A1&node-id=8-488&starting-point-node-id=1%3A2'
+            className='pt-[20px] text-accent text-[18px] hover:font-bold'
+          >
+            https://www.figma.com/proto/f5wP8FlZkCE2HoYvb4zKsU/Untitled?page-id=0%3A1&node-id=8-488&starting-point-node-id=1%3A2
+          </Link>
+        </p>
+        <Image src='/assets/low-fidelity.png' alt="Expert page wireframe" width={800} height={800} className='mt-[50px] self-center' />
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+          Usability Test
+        </h4>
+        <div className='flex items-center justify-center lg:flex-row flex-co w-full'>
+          <p className='mt-[50px] text-[22px] w-1/2'>
+            I conducted an unmoderated usability test containing 5 participants, three females and two male. One was artist by profession, two
+            were students, one was expert and one was random person. A group of tasks were assigned to each individual and their behavior, feelings
+            , and saying were noted.
+            <br />
+            <br />
+            The following tasks were assigned
+            <ul className=' list-inside list-disc text-[18px] mt-[20px]'>
+              <li className='ml-4'>Open the ArtMania app and sign up as a user</li>
+              <li className='ml-4'>Go to the art section and open an art piece</li>
+              <li className='ml-4'>Find a high-rated expert and book an appointment on 26 of May 9am</li>
+              <li className='ml-4'>If I ask you to find and buy me eBook, would you able to know where to go and how to buy it?</li>
+              <li className='ml-4'>How do you feel about the ArtMania app? What you like and what you dislike?</li>
+            </ul>
+          </p>
+          <Image src='/assets/usability.png' alt="Expert page wireframe" width={800} height={800} className='w-1/2' />
+        </div>
+
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+          Affinity Diagram
+        </h4>
+        <p className='mt-[50px] text-[22px] '>
+          An affinity diagram was created based on the notes taken during the usability which was used to organise the notes based on their
+          relationship
+        </p>
+        <div className='grid grid-cols-2 gap-10'>
+          <article className='w-full'>
+            <Image src='/assets/affinity-confusion.png' alt='Affinity Diagram' width={800} height={800} className='object-cover' />
+          </article>
+          <article className='w-full'>
+            <Image src='/assets/affinity-missing.png' alt='Affinity Diagram' width={800} height={800} className='object-cover' />
+          </article>
+          <article className='w-full'>
+            <Image src='/assets/affinity-friendly.png' alt='Affinity Diagram' width={800} height={800} className='object-cover' />
+          </article>
+          <article className='w-full'>
+            <Image src='/assets/affinity-navigation.png' alt='Affinity Diagram' width={800} height={800} className='object-cover' />
+          </article>
+        </div>
+
+        <p className='mt-[50px] text-[22px] font-kanit '>
+          Two rounds of usability tests were conducted. First for the low-fidelity and the other for high-fidelity. The findings of the first
+          round helped in refining the wireframes while the second round lead to refining the mockups
+        </p>
+
+        {/*Findings */}
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-10 mt-[50px]'>
+          {/*1st Grid */}
+          <article className='flex items-center justify-center w-full bg-accent/50 list-inside h-[250px] rounded-lg'>
+            <ol className=' list-decimal text-[22px] p-8 text-primary font-bold text-left'>
+              <li className='ml-4'>
+                Users had difficulty in searching for eBooks
+              </li>
+              <li className='ml-4'>
+                Signin and Signup lacked features like confirm password, see password
+              </li>
+              <li className='ml-4'>
+                Users wants to have expert ratings on home page
+              </li>
+            </ol>
+          </article>
+          {/*2nd Grid */}
+          <article className='flex items-center justify-center w-full bg-accent/50 list-inside h-[250px] rounded-lg'>
+            <ol className=' list-decimal text-[22px] p-8 text-primary font-bold text-left'>
+              <li className='ml-4'>
+                Users want calendar for booking
+              </li>
+              <li className='ml-4'>
+                Users want to return to homepage after completing checkout
+              </li>
+            </ol>
+          </article>
+
+        </div>
+
+        <h4 className='uppercase text-[24px] font-kanit font-bold tracking-[4px] mt-[100px]'>
+          Mockups
+        </h4>
+        <p className='mt-[50px] text-[22px] font-kanit '>
+          After iterating over initial design based ojn user feedback, I craeted mockups by applying different Gestalt principles to make
+          my design standout and help user complete their task without and setbacks.
+        </p>
+
       </section>
     </div>
   )
