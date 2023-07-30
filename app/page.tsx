@@ -117,13 +117,13 @@ const Home = (props: Props) => {
           create a Udemy animation course
         </p>
         <Image src='/assets/persona.png' alt="Persona Image" width={800} height={800}
-          className='mt-[50px] md:w-[700px] lg:w-[800px]'
+          className='mt-[50px] md:w-[700px] lg:w-[800px] self-center'
         />
         <p className='text-[18px] md:text-[20px] lg:text-[22px] mt-[50px]'>
           Mapping Elizabeth’s user journey revealed how helpful it would be for art enthusiastics to have an art-focused app like ArtMania
         </p>
         <Image src='/assets/userJourney.png' alt="Persona Image" width={800} height={800}
-          className='mt-[50px] md:w-[700px] lg:w-[800px]'
+          className='mt-[50px] md:w-[700px] lg:w-[800px] self-center'
         />
       </section>
 
@@ -138,7 +138,7 @@ const Home = (props: Props) => {
           ArtMania app to have access to resource to advance art career.
         </p>
         <Image src='/assets/userflow.png' alt="User Flow" width={800} height={800}
-          className='mt-[50px] md:w-[700px] lg:w-[800px]'
+          className='mt-[50px] md:w-[700px] lg:w-[800px] self-center'
         />
 
         {/*paper wireframe */}
@@ -150,7 +150,7 @@ const Home = (props: Props) => {
           is to establish a clear and user-friendly interface that effectively communicates the apps features and benefits
         </p>
         <Image src='/assets/paperwireFrame.jpg' alt="Paper wireframe" width={800} height={800}
-          className='mt-[50px] md:w-[700px] lg:w-[800px]'
+          className='mt-[50px] md:w-[700px] lg:w-[800px] self-center'
         />
 
         {/*digital wireframe */}
