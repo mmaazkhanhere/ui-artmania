@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundColor: 'primary' }}>{children}</body>
+      <body className={`${inter.className} overflow-y-scroll overflow-x-hidden scrollbar-thin 
+        scrollbar-track-accent/20 scrollbar-thumb-accent/80 h-screen bg-primary`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
